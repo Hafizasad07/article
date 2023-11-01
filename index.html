@@ -8,17 +8,19 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="navbar">
-            <div class="navbar-text">Disclaimer. Dorem ipsum dolor sit amet, consectetur adipiscing.</div>
-        </div>
-        <div class="breadcrumbs">
-            <div class="breadcrumb1"><a href="#">MenuTitle</a></div>
-            <div class="breadcrumb-icon">\</div>
-            <div class="breadcrumb2"><a href="#">Title1</a></div>
-            <div class="breadcrumb-icon">\</div>
-            <div class="breadcrumb3"><a href="#">Title2</a></div>
-            <div class="breadcrumb-icon">\</div>
-            <div class="breadcrumb2"><a href="#">Title3</a></div>
+        <div class="header-sticky">
+            <div class="navbar">
+                <div class="navbar-text">Disclaimer. Dorem ipsum dolor sit amet, consectetur adipiscing.</div>
+            </div>
+            <div class="breadcrumbs">
+                <div class="breadcrumb1"><a href="#">MenuTitle</a></div>
+                <div class="breadcrumb-icon">\</div>
+                <div class="breadcrumb2"><a href="#">Title1</a></div>
+                <div class="breadcrumb-icon">\</div>
+                <div class="breadcrumb3"><a href="#">Title2</a></div>
+                <div class="breadcrumb-icon">\</div>
+                <div class="breadcrumb2"><a href="#">Title3</a></div>
+            </div>
         </div>
         <div class="main-content">
             <div class="flex">
@@ -35,11 +37,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="right-side">
+                <div class="right-side" id="right-side">
                     <div class="positon-sticky">
-                        <div class="section1-heading">SOREM IPSUM DOLOR</div>
-                        <div class="section1">
-                            <div class="section1-text1">Norem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        <div class="main-heading-content">
+                            <div class="pdl-250">
+                                <div class="section1-heading">SOREM IPSUM DOLOR</div>
+                                <div class="section1">
+                                    <div class="section1-text1">Norem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="section1">
@@ -84,5 +90,15 @@
             </div>
         </div>
     </div>
+
+    <script>
+        window.onscroll = function() {
+            if (document.documentElement.scrollTop > 100) {
+                document.getElementById("right-side").classList.add("scrollDiv");
+            }else{
+                document.getElementById("right-side").classList.remove("scrollDiv");
+            }
+        }
+    </script>
 </body>
 </html>
