@@ -390,4 +390,14 @@ body{
     .main-content .flex .right-side.scrollDiv .positon-sticky{
         padding-bottom: 0px;
     }
+
+    .wrapper .header-sticky{
+        position: fixed;
+        width: 100%;
+        padding-bottom: 12px;
+    }
+
+    .main-content .flex .right-side .positon-sticky .main-heading-content{
+        padding-top: 70px;
+    }
 }
