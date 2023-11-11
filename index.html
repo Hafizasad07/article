@@ -98,6 +98,21 @@
                 document.getElementById("right-side").classList.remove("scrollDiv");
             }
         }
+
+        // JavaScript (script.js)
+        document.addEventListener('DOMContentLoaded', function () {
+            var header = document.getElementsByClassName('header-sticky');
+            var sticky = header.offsetTop;
+
+            window.addEventListener('scroll', function () {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add('sticky');
+                } else {
+                    header.classList.remove('sticky');
+                }
+            });
+        });
+
     </script>
 </body>
 </html>
